@@ -81,3 +81,96 @@ function canVote(age) {
   return age >= 18 ? "Eligible to vote" : "Not eligible to vote";
 }
 console.log("15) Voting:", canVote(21));
+
+/********* 16. Prime Number Check *********/
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+console.log("16) Prime Check (17):", isPrime(17));
+
+/********* 17. Sum of digits *********/
+let number = 123;
+let temp = number, digitSum = 0;
+while (temp > 0) {
+  digitSum += temp % 10;
+  temp = Math.floor(temp / 10);
+}
+console.log("17) Sum of digits (123):", digitSum);
+
+/********* 18. Reverse String without reverse() *********/
+function revString(str) {
+  let rev = "";
+  for (let i = str.length - 1; i >= 0; i--) rev += str[i];
+  return rev;
+}
+console.log("18) Reverse String:", revString("hello"));
+
+/********* 19. Grade using Marks *********/
+let marks = 82;
+if (marks >= 90) console.log("19) Grade: A");
+else if (marks >= 75) console.log("19) Grade: B");
+else if (marks >= 50) console.log("19) Grade: C");
+else console.log("19) Grade: Fail");
+
+/********* 20. Simple Calculator *********/
+function calc(a, b, op) {
+  if (op === "+") return a + b;
+  else if (op === "-") return a - b;
+  else if (op === "*") return a * b;
+  else if (op === "/") return b !== 0 ? a / b : "Cannot divide by zero";
+  else return "Invalid operator";
+}
+console.log("20) Calc (10 * 3):", calc(10, 3, "*"));
+
+/********* 21. Count Vowels in String *********/
+function countVowels(str) {
+  let count = 0;
+  let vowels = "aeiouAEIOU";
+  for (let ch of str) if (vowels.includes(ch)) count++;
+  return count;
+}
+console.log("21) Vowels in 'education':", countVowels("education"));
+
+/********* 22. Fibonacci Series upto n *********/
+let N = 8, A = 0, B = 1;
+console.log("22) Fibonacci:");
+for (let i = 1; i <= N; i++) {
+  console.log(A);
+  let next = A + B;
+  A = B;
+  B = next;
+}
+
+/********* 23. Function → Min & Max of array *********/
+function minMax(arr) {
+  return { min: Math.min(...arr), max: Math.max(...arr) };
+}
+console.log("23) Min & Max:", minMax([4, 9, 1, 6, 2]));
+
+/********* 24. Switch Case Menu *********/
+let choice = 3, num1 = 10, num2 = 5;
+console.log("24) Menu Result:");
+switch (choice) {
+  case 1: console.log(num1 + num2); break;
+  case 2: console.log(num1 - num2); break;
+  case 3: console.log(num1 * num2); break;
+  case 4: console.log(num1 / num2); break;
+  default: console.log("Invalid Choice");
+}
+
+/********* 25. Armstrong Number *********/
+function isArmstrong(num) {
+  let sum = 0, temp = num;
+  let digits = num.toString().length;
+  while (temp > 0) {
+    let d = temp % 10;
+    sum += d ** digits;
+    temp = Math.floor(temp / 10);
+  }
+  return sum === num;
+}
+console.log("25) Armstrong Check (153):", isArmstrong(153));
