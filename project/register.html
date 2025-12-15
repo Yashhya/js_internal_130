@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HCL Tech | Register</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif;}
+body{background:linear-gradient(135deg,#f0f4ff,#dde6f5);}
+
+/* HEADER */
+header{
+    height:80px;
+    background:linear-gradient(90deg,#0a1f44,#1b4fa1);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 35px;
+    color:white;
+}
+.logo img{height:42px;}
+.title{font-size:28px;font-weight:700;}
+
+/* REGISTER BOX */
+.register-container{
+    height:calc(100vh - 80px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register-box{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.register-box h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#0a1f44;
+}
+
+.register-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+.register-box button{
+    width:100%;
+    padding:12px;
+    background:linear-gradient(135deg,#0a1f44,#1b4fa1);
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.register-box button:hover{opacity:0.9;}
+
+.back-login{
+    text-align:center;
+    margin-top:15px;
+}
+
+.back-login a{
+    color:#1b4fa1;
+    font-weight:bold;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo"><img src="logo.png"></div>
+    <div class="title">HCL TECHNOLOGIES</div>
+    <div class="logo"><img src="logo.png"></div>
+</header>
+
+<div class="register-container">
+    <div class="register-box">
+        <h2>Create Account</h2>
+        <input type="text" placeholder="User ID">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+        <button>Register</button>
+
+        <div class="back-login">
+            Already registered? <a href="home.html">Login</a>
+        </div>
+    </div>
+</div>
+<h1 id="hd1">welcome</h1>
+<script>
+    let params=new URlSearchParams(window.location.search);
+    let c=params.get("userid");
+    document.getElementById("hd1").innerHTML=`HEllo ! <b> ${c}</b>;
+</script>
+
+</body>
+</html>
