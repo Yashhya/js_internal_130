@@ -1,0 +1,14 @@
+/workspaces/js_internal_130/HospitalManagementSystem/bin/Debug/net7.0/HospitalManagementSystem
+/workspaces/js_internal_130/HospitalManagementSystem/bin/Debug/net7.0/HospitalManagementSystem.deps.json
+/workspaces/js_internal_130/HospitalManagementSystem/bin/Debug/net7.0/HospitalManagementSystem.runtimeconfig.json
+/workspaces/js_internal_130/HospitalManagementSystem/bin/Debug/net7.0/HospitalManagementSystem.dll
+/workspaces/js_internal_130/HospitalManagementSystem/bin/Debug/net7.0/HospitalManagementSystem.pdb
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/HospitalManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/HospitalManagementSystem.AssemblyInfoInputs.cache
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/HospitalManagementSystem.AssemblyInfo.cs
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/HospitalManagementSystem.csproj.CoreCompileInputs.cache
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/HospitalManagementSystem.dll
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/refint/HospitalManagementSystem.dll
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/HospitalManagementSystem.pdb
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/HospitalManagementSystem.genruntimeconfig.cache
+/workspaces/js_internal_130/HospitalManagementSystem/obj/Debug/net7.0/ref/HospitalManagementSystem.dll
